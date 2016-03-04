@@ -8,10 +8,11 @@ get "/" do
 end
 
 post "/" do
-    @user={name: params[:key]
+    @user={
+        name: params[:]
 
     }
-erb :dashboard
+    erb :dashboard
 end
 
 end
