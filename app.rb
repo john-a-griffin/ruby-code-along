@@ -9,7 +9,9 @@ end
 
 post "/" do
     @user={
-        name: params[:]
+        name: "#{params["fname"]} #{params["lname"]}",
+        profile_pic_url: "#{params["picurl"]}", 
+        birthday: "#{params["birthday"]}"
 
     }
     erb :dashboard
